@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/agendamento.css">
+    <title>Agendamento</title>
+</head>
+<body>
+    <div id="la"></div>
+    <div id="bola"></div>
+
+    <hgroup id="titulo">
+        <h1>Agendamento</h1>
+    </hgroup>
+   <div id="fundo">
+        <div id="dog">
+            <img src="../projetos/img/dog1.png" class="dog1" alt="cachorro">
+            <img src="../projetos/img/dog2.png" class="dog2" alt="cachorro">
+            <img src="../projetos/img/dog3.png" class="dog3" alt="cachorro">
+        </div>
+        <div id="gato">
+            <img src="../projetos/img/gato1.png" class="gato1" alt="gato">
+            <img src="../projetos/img/gato2.png" class="gato2" alt="gato">
+            <img src="../projetos/img/gato3.png" class="gato3" alt="gato">
+        </div>
+   </div>
+
+   <div id="agenda">
+       <form method="post">
+            <fieldset id="todo"><legend id="legenda">Dados do Agendamento</legend>
+                <div id="dados">
+                    <input type="text" class="caixa" placeholder="Nome do pet">
+                    <input type="text" class="caixa" placeholder="idade do pet" value="" >
+                    <input type="text" class="caixa" placeholder="Nome do Dono">
+                    <input type="text" class="caixa" placeholder="Endereço">
+                    <input type="tel"  class="caixa" placeholder="Telefone">
+                </div><br>
+                <div id="dados-dog">
+                    <label for="tipo" id="leg2">Tipo de animal:</label><br>
+                    <select name="tipo" id="tipo">
+                        <option value="cachorro">Cachorro</option>
+                        <option value="gato">Gato</option>
+                    </select>
+                </div>
+                    <div id="sex">
+                        <fieldset><legend>Sexo do Animal:</legend>
+                            <input type="radio" name="sex" id="macho"><label for="macho">Macho</label><br>
+                            <input type="radio" name="sex" id="femea"><label for="femea">Femea</label>
+                        </fieldset>
+                    </div>
+                    <div id="data-hora">
+                        <label for="datahora" id="leg3">Horario:</label><br>
+                        <input type="date" name="datahora" id="data"><br>
+                        <input type="time" name="datahora" id="hora"><br>
+                    </div>
+                    <label for="oque">Oque o animal tem?</label>
+                    <textarea name="oque" id="oque" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit">Agendar</button> <button type="reset">Cancelar</button>
+
+            </fieldset>
+       </form>
+   </div>
+</body>
+</html>
